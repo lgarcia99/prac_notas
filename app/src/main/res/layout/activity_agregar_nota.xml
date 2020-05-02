@@ -6,8 +6,39 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimaryLight"
     android:orientation="vertical"
-    tools:context=".AgregarNotaActivity">
+    >
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/primary_text"
+        android:text="NOTA"
+        android:textSize="24dp"
+        android:textAlignment="center"/>
 
+    <EditText
+        android:id="@+id/et_titulo"
+        android:textColor="@color/primary_text"
+        android:hint="Título"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_contenido"
+        android:textColor="@color/secondary_text"
+        android:hint="Escribir nota"
+        android:inputType="textMultiLine"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/primary_text"
+        android:text="Guardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
